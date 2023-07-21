@@ -5,10 +5,29 @@
     box-sizing: border-box;
 }
 
-header h1 {
-    text-align: center;
+.wrap {
+    background-image: linear-gradient(to left,#030346,#314ac4);
+    color: #fff;
 }
 
-#title h1 {
+header {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+#border {
+    border: 100px;
+}
+
+.topnav li {
+    list-style: none;
+}
+
+body #search {
+    font-weight: bolder;
 }

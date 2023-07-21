@@ -7,27 +7,46 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://api.openweathermap.org/data/2.5/forecast?id=524901&appid={ab763419ec9b4278d1e0917302c99b60
   }" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Weather Dashboard</title>
 </head>
 
 <body>
-    <header id="title">
+    <header class="wrap">
         <h1>Weather Dashboard</h1>
     </header>
+
     <main>
-<nav>
-    <ul>
-        <li>Atlanta</li>
-        <li>Denver</li>
-        <li>Seattle</li>
-        <li>San Francisco</li>
-        <li>Orlando</li>
-        <li>New York</li>
-        <li>Chicago</li>
-        <li>Austin</li>
-    </ul>
-</nav>
+        <h3 id="search">Search For a City: </h3>
+        <input type="text" placeholder="Search...">
+        <nav class="topnav">
+            <ul>
+                <a href="#">
+                    <li>Atlanta</li>
+                </a>
+                <a href="#">
+                    <li>Denver</li>
+                </a>
+                <a href="#">
+                    <li>Seattle</li>
+                </a>
+                <a href="#">
+                    <li>San Francisco</li>
+                </a>
+                <a href="#">
+                    <li>Orlando</li>
+                </a>
+                <a href="#">
+                    <li>New York</li>
+                </a>
+                <a href="#">
+                    <li>Chicago</li>
+                </a>
+                <a href="#">
+                    <li>Austin</li>
+                </a>
+            </ul>
+        </nav>
     </main>
     <script src="./script.js"></script>
 </body>
