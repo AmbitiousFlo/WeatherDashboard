@@ -12,42 +12,27 @@
 </head>
 
 <body>
-    <header class="wrap">
+    <header class="page-header">
         <h1>Weather Dashboard</h1>
     </header>
 
     <main>
-        <h3>Search For a City: </h3>
-        <input type="text" placeholder="Search...">
-        <button id="Search">Search</button>
-        <nav class="topnav">
-            <ul>
-                
-                    <li><button class="cities">Atlanta</button></li>
-                
-              
-                    <li><button class="cities">Denver</button></li>
-              
-               
-                    <li><button class="cities">Seattle</button></li>
-               
-                
-                    <li><button class="cities">San Francisco</button></li>
-                
-                
-                    <li><button class="cities">Orlando</button></li>
-                
-               
-                    <li><button class="cities">New York</button></li>
-                
-               
-                    <li><button class="cities">Chicago</button></li>
-               
-                
-                    <li><button class="cities">Austin</button></li>
-               
-            </ul>
-        </nav>
+        <section id="search-section">
+            <form>
+                <label for="fname">Search for a city: </label><br>
+                <input type="text" id="fname" name="fname" value="Enter city name.."><br>
+                <button type="submit" id="search-button">Search</button>
+            </form>
+            <section id="search-history-section">
+                <h3>History</h3>
+                <ol id="search-history-list"></ol>
+                <button id="clear-history" disabled>Clear History</button>
+            </section>
+        </section>
+       <section id="forecast-section" class="forecast-section-hidden">
+        <h3>5-Day Forecast</h3>
+        <section id="forecast-items-section "></section> 
+       </section>
     </main>
     <script src="./script.js"></script>
 </body>
