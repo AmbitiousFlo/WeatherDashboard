@@ -1,45 +1,82 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 .page-header {
-    background-image: linear-gradient(to left,#030346,#314ac4);
-    color: #fff;
+  background-image: linear-gradient(to left, #030346, #314ac4);
+  color: #fff;
 }
 
 header {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 header h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
-
+#forecast-section li {
+  background: #fff;
+  color: #001e4d;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 .cities {
-    background: #bdbaba;
-    color: black;
-    font-weight: bold;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: left;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    width: 22%
+  background: #bdbaba;
+  color: black;
+  font-weight: bold;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 22%
 }
 
-.cities:hover{
-    background: 222;
-    color: #fff;
+.cities:hover {
+  background: 222;
+  color: #fff;
 }
 
+@media screen and (max-width: 1135px) {
+  main {
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+  }
 
+  #search-section {
+    width: 50%;
+    margin-top: 0;
+  }
 
+  #weather-section {
+    width: 90%;
+  }
+
+  .forecast-container-shown {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #forecast-items-section {
+    flex-direction: column;
+  }
+
+  .forecast-item {
+    margin: auto 0 1rem 0;
+  }
+}

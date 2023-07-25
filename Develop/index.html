@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://api.openweathermap.org/data/2.5/forecast?id=524901&appid={ab763419ec9b4278d1e0917302c99b60
-  }" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css" />
     <title>Weather Dashboard</title>
 </head>
@@ -29,10 +27,24 @@
                 <button id="clear-history" disabled>Clear History</button>
             </section>
         </section>
-       <section id="forecast-section" class="forecast-section-hidden">
-        <h3>5-Day Forecast</h3>
-        <section id="forecast-items-section "></section> 
-       </section>
+        <section id="forecast-section" class="forecast-section-hidden">
+            <h3>5-Day Forecast</h3>
+            <ol id="forecast-items-section ">
+                <li><button><article class="forecast-item">Atlanta</article></button></li>
+                <li><button>
+                    <article class="forecast-item">Tampa</article>
+                </button></li>
+                <li><button>
+                    <article class="forecast-item">Kansas City</article>
+                </button></li>
+                <li><button>
+                    <article class="forecast-item">Chicago</article>
+                </button></li>
+                <li><button>
+                    <article class="forecast-item">Orlando</article>
+                </button></li>
+            </ol>
+        </section>
     </main>
     <script src="./script.js"></script>
 </body>
