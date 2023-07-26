@@ -5,47 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css" />
     <title>Weather Dashboard</title>
 </head>
 
 <body>
-    <header class="page-header">
+    <header class="bg-primary bg-gradient d-flex align-items-center py-3 justify-content-center text-white">
         <h1>Weather Dashboard</h1>
     </header>
 
-    <main>
-        <section id="search-section">
-            <form>
-                <label for="fname">Search for a city: </label><br>
-                <input type="text" id="fname" name="fname" value="Enter city name.."><br>
-                <button type="submit" id="search-button">Search</button>
-            </form>
-            <section id="search-history-section">
-                <h3>History</h3>
-                <ol id="search-history-list"></ol>
-                <button id="clear-history" disabled>Clear History</button>
-            </section>
-        </section>
-        <section id="forecast-section" class="forecast-section-hidden">
+    <div class="row">
+        <div class="col-12 col-sm-3 mx-3">
+            <h2>Search for a City.. </h2>
+            <input type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            <button type="button" class="btn btn-primary w-100 my-3">Search</button>
+            <hr>
+            <ul class="list-group">
+                <li class="list-group-item"><button type="button" class="btn btn-secondary">Tampa</button></li>
+                <li class="list-group-item"><button type="button" class="btn btn-secondary">Chicago</button></li>
+                <li class="list-group-item"><button type="button" class="btn btn-secondary">Miami</button></li>
+                <li class="list-group-item"><button type="button" class="btn btn-secondary">Atlanta</button></li>
+                <li class="list-group-item"><button type="button" class="btn btn-secondary">Texas</button></li>
+            </ul>
+        </div>
+        <div class="col-12 col-sm-8">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 id="title">Miami (07/26/2023)</h2>
+                    <p id="temp">Temp: 76.6F</p>
+                    <p id="wind">8.43 MPH</p>
+                    <p id="humidity">44%</p>
+                </div>
+            </div>
+
             <h3>5-Day Forecast</h3>
-            <ol id="forecast-items-section ">
-                <li><button><article class="forecast-item">Atlanta</article></button></li>
-                <li><button>
-                    <article class="forecast-item">Tampa</article>
-                </button></li>
-                <li><button>
-                    <article class="forecast-item">Kansas City</article>
-                </button></li>
-                <li><button>
-                    <article class="forecast-item">Chicago</article>
-                </button></li>
-                <li><button>
-                    <article class="forecast-item">Orlando</article>
-                </button></li>
-            </ol>
-        </section>
-    </main>
+
+            <div class="row">
+                <div class="col-sm-2 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">07/26/23</h5>
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+                            <p id="temp1">Temp: 76.6F</p>
+                            <p id="wind1">8.43 MPH</p>
+                            <p id="humidity1">44%</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">07/26/23</h5>
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+                            <p id="temp2">Temp: 76.6F</p>
+                            <p id="wind2">8.43 MPH</p>
+                            <p id="humidity2">44%</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">07/26/23</h5>
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+                            <p id="temp3">Temp: 76.6F</p>
+                            <p id="wind3">8.43 MPH</p>
+                            <p id="humidity3">44%</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">07/26/23</h5>
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+                            <p id="temp4">Temp: 76.6F</p>
+                            <p id="wind4">8.43 MPH</p>
+                            <p id="humidity4">44%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">07/26/23</h5>
+                            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+                            <p id="temp5">Temp: 76.6F</p>
+                            <p id="wind5">8.43 MPH</p>
+                            <p id="humidity5">44%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 
