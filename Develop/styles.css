@@ -1,4 +1,6 @@
-
+#search-history {
+  display: none;
+}
 
 @media screen and (max-width: 1135px) {
   main {
