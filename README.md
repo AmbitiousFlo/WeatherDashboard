@@ -4,7 +4,7 @@
 ![Screenshot of User Story](./Assets/Screenshot%202023-07-27%20111726.png) 
 
 ## Description 
-Welcome! This is the Weather Dashboard, to create this project I used One-Call API allowing users to cearch for the city of their choice and see the current weather as well as a 5-day forecast for that city.
+Welcome! This is the Weather Dashboard, to create this project I used One-Call API allowing users to search for the city of their choice and see the current weather as well as a 5-day forecast for that city.
 
 Local storage was used to add searched cities to history, then you are able to click these different cities logged in storage to look them up using the Local storage.
 
