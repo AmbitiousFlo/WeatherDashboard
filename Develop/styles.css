@@ -2,33 +2,31 @@
   display: none;
 }
 
-@media screen and (max-width: 1135px) {
-  main {
-    flex-direction: column-reverse;
-    height: auto;
-    align-items: center;
+ /* Responsive media queries */
+ @media screen and (min-width: 576px) {
+  
+  .form-container {
+      flex: 0 0 25%;
   }
 
-  #search-section {
-    width: 50%;
-    margin-top: 0;
-  }
-
-  #weather-section {
-    width: 90%;
-  }
-
-  .forecast-container-shown {
-    margin: 1rem 0;
+  .main-content {
+      flex: 0 0 75%;
   }
 }
 
-@media screen and (max-width: 920px) {
-  #forecast-items-section {
-    flex-direction: column;
+@media screen and (min-width: 768px) {
+
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
   }
 
-  .forecast-item {
-    margin: auto 0 1rem 0;
+  .form-container {
+      flex: 0 0 30%;
+  }
+
+  .main-content {
+      flex: 0 0 68%;
   }
 }
