@@ -19,9 +19,9 @@
     <div class="row">
         <div class="col-12 col-sm-3 mx-3">
             <h2>Search for a City.. </h2>
-            <input type="text" class="form-control" aria-label="Sizing example input"
+            <input id="city-input" type="text" class="form-control" aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-default">
-            <button type="button" class="btn btn-primary w-100 my-3">Search</button>
+            <button type="button" id="search-btn" class="btn btn-primary w-100 my-3">Search</button>
             <hr>
             <ul class="list-group">
                 <li class="list-group-item"><button type="button" class="btn btn-secondary">Tampa</button></li>
@@ -47,7 +47,7 @@
                 <div class="col-sm-2 mb-3 mb-sm-0">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">07/26/23</h5>
+                            <h5 class="card-title1">07/26/23</h5>
                             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
                             <p id="temp1">Temp: 76.6F</p>
                             <p id="wind1">8.43 MPH</p>
@@ -60,7 +60,7 @@
                 <div class="col-sm-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">07/26/23</h5>
+                            <h5 class="card-title2">07/26/23</h5>
                             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
                             <p id="temp2">Temp: 76.6F</p>
                             <p id="wind2">8.43 MPH</p>
@@ -73,7 +73,7 @@
                 <div class="col-sm-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">07/26/23</h5>
+                            <h5 class="card-title3">07/26/23</h5>
                             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
                             <p id="temp3">Temp: 76.6F</p>
                             <p id="wind3">8.43 MPH</p>
@@ -86,7 +86,7 @@
                 <div class="col-sm-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">07/26/23</h5>
+                            <h5 class="card-title4">07/26/23</h5>
                             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
                             <p id="temp4">Temp: 76.6F</p>
                             <p id="wind4">8.43 MPH</p>
@@ -98,7 +98,7 @@
                 <div class="col-sm-2">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">07/26/23</h5>
+                            <h5 class="card-title5">07/26/23</h5>
                             <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
                             <p id="temp5">Temp: 76.6F</p>
                             <p id="wind5">8.43 MPH</p>
@@ -110,6 +110,7 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.9/dayjs.min.js" integrity="sha512-q4Xn+ZU2K+dqJPL8a3TiyGsDa31IkR/rLt/w+fy8jLrx8TdXj0dLM1Aq4aPXnOOKxHEya/bD9DePDB2DHm4jJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
 </body>
 
