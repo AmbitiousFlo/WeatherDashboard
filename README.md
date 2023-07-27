@@ -24,6 +24,7 @@ This project has taught me alot, including the difficulties you may encounter us
 
 
 ## References
-https://openweathermap.org/forecast5
-https://www.w3schools.com/js/js_api_web_storage.asp
-https://www.w3schools.com/html/html_form_attributes_form.asp
+
+# <a href="https://openweathermap.org/forecast5">Weather API</a>
+
+# <a href="https://www.w3schools.com/js/js_api_web_storage.asp">Local Storage</a>
