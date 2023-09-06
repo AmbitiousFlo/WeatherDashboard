@@ -1,0 +1,190 @@
+/* Create global variables for color scheme */
+:root {
+  --header1: linear-gradient(30deg, rgb(0, 0, 0), rgb(93, 222, 112));
+  --header2: linear-gradient(180deg, rgb(0, 0, 0), rgb(93, 222, 112));
+  --outline: -1.3px -1.3px 0 #000, 1.3px -1.3px 0 #000, -1.3px 1.3px 0 #000,
+    1.3px 1.3px 0 #000;
+}
+
+/* Universal selector - set box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Style body as column flex container and darken bg color */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgb(48, 48, 48);
+  background-size: cover;
+  height: 100vh;
+  font-size: 62.5%;
+  color: white;
+  opacity: 90%;
+}
+
+/* Give header variable color and style content */
+header {
+  background: var(--header1);
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.2px solid white;
+  text-shadow: var(--outline);
+}
+
+/* Increase h1 size */
+h1 {
+  font-size: 3.5rem;
+}
+
+/* Make main flex for styling */
+main {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* Remove the the gutter from the forecast cards */
+.row {
+  --bs-gutter-x: 0;
+}
+
+/* Add slight space between forecast cards */
+.card {
+  margin: 0.1rem;
+}
+
+/* Add card header variable color */
+.card-header {
+  background: var(--header2);
+}
+
+/* Position h2 elements */
+h2 {
+  padding-top: 1.5rem;
+  text-align: center;
+  text-shadow: var(--outline);
+}
+
+/* Position the input field and button */
+input,
+button {
+  margin: 0.5rem;
+  /* margin-left: 1.5rem; */
+  width: 90%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+/* Add padding to left side of input field */
+input {
+  padding-left: 1rem;
+}
+
+/* Change button design */
+button {
+  background-color: rgb(48, 48, 48);
+  color: white;
+  font-weight: 500;
+  text-shadow: var(--outline);
+}
+
+/* Make hr visible */
+hr {
+  border: 1px solid black;
+}
+
+/* Position h3 elements */
+h3 {
+  text-align: center;
+  padding-top: 2.6rem;
+}
+
+/* Center the search history buttons in their container */
+#historyUl {
+  margin-right: 0.5rem;
+  width: 90%;
+}
+
+/* Change forecast card li font-size */
+li {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Keep search history font at 1rem */
+.historyBtn {
+  font-size: 1rem;
+}
+
+/* Remove space from top */
+.city {
+  padding-top: 0;
+  font-size: 3rem;
+}
+
+/* Adjust icon size */
+.icon {
+  width: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Give date the text outline and add space to top */
+.date,
+.dates {
+  padding-top: 0.5rem;
+  text-shadow: var(--outline);
+}
+
+/* Add class style for the search history pulled from local storage */
+.search-history,
+#history {
+  color: gray;
+  padding-top: 0rem;
+}
+
+/* Center forecast headers */
+h4 {
+  text-align: center;
+}
+
+/* Add media query to fix size of search box */
+@media screen and (max-width: 1600px) {
+  #search {
+    max-width: 96%;
+  }
+}
+
+/* Add media queries for mobile responsiveness due to minor tweaks to bootstrap */
+@media screen and (max-width: 990px) {
+  /* Shrink the h1 font on a smaller screen */
+  h1 {
+    font-size: 3rem;
+  }
+
+  /* Switch main to column  */
+  main {
+    flex-direction: column;
+  }
+
+  /* Center forecast cards */
+  .row {
+    justify-content: center;
+  }
+
+  /* Fix alignment in mobile view */
+  input,
+  button {
+    margin-left: 1rem;
+  }
+}
+
+/* Add media query to fix size of search box */
+@media screen and (max-width: 576px) {
+  #search {
+    max-width: 100%;
+  }
+}
