@@ -15,7 +15,7 @@ This project has taught me alot, including the difficulties you may encounter us
 # Live Site: <a href="https://ambitiousflo.github.io/WeatherDashboard/"> Weather Dashboard</a>
 
 ## Usage 
- ![Screenshot of the Weather Dashboard](./Assets/Screenshot%202023-07-27%20111513.png) 
+ ![Screenshot of the Weather Dashboard](./assets/images/Screenshot%202023-09-06%20153139.png) 
 
 
 ## License
