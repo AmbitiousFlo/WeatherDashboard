@@ -1,7 +1,7 @@
 # WeatherDashboard
  
 ## User Story
-![Screenshot of User Story](./Assets/Screenshot%202023-07-27%20111726.png) 
+
 
 ## Description 
 Welcome! This is the Weather Dashboard, to create this project I used One-Call API allowing users to search for the city of their choice and see the current weather as well as a 5-day forecast for that city.
